@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+li{ list-style: none;}
+
+button{all:unset}
+body{
+    background-color: rgb(48, 42, 47);
+}
+.icono{
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+}
+.icono:hover{
+    padding: 1px;
+    border-radius: 10px;
+    height: 31px;
+    width: 36px;
+    background-color: #000000;  
+    background-color: rgba(182, 171, 171, 0.3);
+}
+.menu{
+    background-image: url(./img/amigosNav.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top: 15px;
+    padding-left: 10px;
+    position: fixed;
+    width: 25%;
+    height: 100%;  
+    background-color: rgb(115, 13, 211);
+    color: rgb(243, 217, 240);
+    font-size: 22px;
+    box-shadow: 2px 2px 5px#000;
+
+    
+}
+.sideli{
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+.sideli:hover{
+    background-color: #000000;  
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px ;
+    margin-right:15px ;
+}
+#busqueda{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#input{
+    width:70%;
+    height: 28px;
+    border-radius: 10px;
+}
+
+#allFriends{
+    /* column-count: 3; 
+    margin-left: 27%; */
+   
+}
+
+#lista{
+    margin-left: 25%;
+   
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+}
+
+.profilePic{
+    padding-top: none;
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%);
+    width:260px;
+    /*border-radius: 15px 15px 0 0;*/
+}
+.tarjeta{
+    margin-left: 50px ;     
+   color:rgb(243, 217, 240);
+   background-color: rgb(26, 23, 23); 
+   border-radius: 15px;
+   width:260px;
+   height: 400px;  
+   margin-bottom: 40px;
+   box-shadow: 2px 2px 5px#000;
+   grid-template-rows: 210px 250px 20px;
+    background: #1d1d1d;
+  color:white;
+  text-align: justify;
+  padding-top: none;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.tarjeta:hover{
+    width:270px;
+    height: 410px; 
+}
+.profilePic:hover{
+    width:270px;
+}
+
+.descrip{
+    padding: 8px;
+    font-size: 17px;
+}
+
+#amigo{
+    margin-top: 3%;
+    margin-left: 30%;
+    color: aliceblue; 
+    
+}
+
+#gif{
+    
+    margin-left: 57%;
+    position:absolute;    
+    margin-top: 17%;
+    border: 16px solid #f8f7f7; /* Light grey */
+    border-top: 16px solid black; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.botonEli{
+
+    background-color: rgb(160, 9, 9);
+    padding: 20px 39px;
+    
+    text-align: center;
+    border-radius: 8px;cursor: pointer;
+    font-size: 20px ;
+    box-shadow: 2px 2px 5px#000;
+    margin-left: 40px;
+}
+.botonEli:hover{
+    padding: 21px 40px; 
+    background-color: rgb(156, 21, 21);
+}
+.msg{
+    margin-top: 25%;
+    margin-left: 40px;
+    font-size: 30px;
+}
